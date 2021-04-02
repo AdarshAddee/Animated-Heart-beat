@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animated Heart</title>
+    </head>
+    <body>
+    
+        <div class="heart"></div>
+        
+        <style>
+        
+            body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart{
+    width: 100px;
+    height: 100px;
+    background-color: #f20044;
+    position: relative;
+    transform: rotate(45deg);
+    box-shadow: -10px 10px 50px #f20033;
+    animation: heartbeat 0.9s linear infinite;
+}
+
+@keyframes heartbeat{
+    0%{
+        transform: rotate(-45deg) scale(1);
+    }
+    
+    30%{
+        transform: rotate(-45deg) scale(1.5);
+    }
+    
+    60%{
+        transform: rotate(-45deg) scale(1.2);
+    }
+    
+    80%{
+        transform: rotate(-45deg) scale(1.5);
+    }
+    
+    100%{
+        transform: rotate(-45deg) scale(1);
+    }
+}
+
+.heart:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #f20044;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: -10px -10px 50px #f20033;
+}
+
+.heart:after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #f20044;
+    right: -50%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 50px #f20033;
+}
+        
+        </style>
+        
+        <script>
+        	
+            alert("I made this____________\n♡                                                                 for my most lovingly(♡) and caring(♡) friend__________                                                                                                                                                                     ♡          \nLove You Too Dear♡")
+alert("I'm just showing my love(♡) for you :-)")
+        
+        </script>
+        
+    </body>
+</html>
